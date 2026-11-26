@@ -1,0 +1,88 @@
+/* =========================================================
+   ACCOUNT.CSS — dipakai bersama oleh pesanan.html & akun.html
+   (bagian yang sama di kedua halaman: sidebar akun)
+   ========================================================= */
+
+.account-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 16px;
+  padding: 20px 0 40px;
+  align-items: start;
+}
+
+.account-sidebar {
+  padding: 20px;
+  position: sticky;
+  top: 16px;
+}
+
+.account-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 18px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.account-user img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.account-user-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.account-user-link {
+  font-size: 12px;
+  color: var(--color-text-soft);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.account-user-link:hover {
+  color: var(--color-primary);
+}
+
+.account-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.account-nav a {
+  padding: 10px 8px;
+  font-size: 13.5px;
+  color: var(--color-text);
+  border-radius: var(--radius-sm);
+}
+
+.account-nav a:hover {
+  background: #fafafa;
+  color: var(--color-primary);
+}
+
+.account-nav a.active {
+  color: var(--color-primary);
+  font-weight: 600;
+  background: #fff3ef;
+}
+
+.account-content {
+  min-height: 400px;
+}
+
+@media (max-width: 800px) {
+  .account-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .account-sidebar {
+    position: static;
+  }
+}

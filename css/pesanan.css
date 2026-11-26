@@ -1,0 +1,88 @@
+/* =========================================================
+   PESANAN.CSS — hanya dipakai oleh pesanan.html
+   ========================================================= */
+
+.page-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.orders-panel {
+  padding: 16px 20px;
+}
+
+.order-card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+
+.order-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #fafafa;
+  font-size: 13px;
+}
+
+.order-shop {
+  font-weight: 600;
+}
+
+.order-status {
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+.status-dikirim { color: var(--color-primary); }
+.status-selesai { color: var(--color-success); }
+.status-belum-bayar { color: #c98a00; }
+
+.order-body {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+}
+
+.order-body img {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+}
+
+.order-item-info {
+  flex: 1;
+}
+
+.order-item-info p {
+  font-size: 13.5px;
+  margin-bottom: 4px;
+}
+
+.order-item-info span {
+  font-size: 12px;
+  color: var(--color-text-soft);
+}
+
+.order-total {
+  font-weight: 700;
+  color: var(--color-primary);
+  font-size: 14px;
+}
+
+.order-foot {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 12px 16px;
+  border-top: 1px solid var(--color-border);
+}
+
+.orders-panel .empty-state {
+  padding: 50px 20px;
+}

@@ -1,0 +1,135 @@
+/* =========================================================
+   KATEGORI.CSS — hanya dipakai oleh kategori.html
+   ========================================================= */
+
+.category-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 16px;
+  padding-bottom: 30px;
+}
+
+.filter-sidebar {
+  padding: 18px 16px;
+  align-self: start;
+  position: sticky;
+  top: 90px;
+}
+
+.filter-block {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.filter-block:first-child {
+  padding-top: 0;
+}
+
+.filter-block:last-child {
+  border-bottom: none;
+}
+
+.filter-block h3 {
+  font-size: 13.5px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  color: var(--color-text-soft);
+}
+
+.filter-list li {
+  margin-bottom: 9px;
+  font-size: 13px;
+}
+
+.filter-list label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.price-range {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.price-range input {
+  width: 0;
+  flex: 1;
+  padding: 7px 8px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 12.5px;
+}
+
+.sort-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 20px;
+  flex-wrap: wrap;
+}
+
+.sort-label {
+  font-size: 13px;
+  color: var(--color-text-soft);
+  margin-right: 4px;
+}
+
+.sort-btn {
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  font-size: 13px;
+  color: var(--color-text);
+  background: var(--color-white);
+}
+
+.sort-btn.active,
+.sort-btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 20px;
+}
+
+.page-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+  font-size: 13px;
+}
+
+.page-btn.active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.page-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+@media (max-width: 900px) {
+  .category-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 960px) {
+  .filter-sidebar { position: static; }
+}

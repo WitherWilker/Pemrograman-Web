@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masuk / Daftar — BelanjaKu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/login.css">
+</head>
+<body class="login-body">
+
+<header class="login-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="logo-mark" style="color:var(--color-primary);">B</span>
+      <span class="logo-text" style="color:var(--color-text);">BelanjaKu</span>
+    </a>
+  </div>
+</header>
+
+<main class="login-main">
+  <div class="login-box">
+
+    <!-- ============ PANEL KIRI (ilustrasi) ============ -->
+    <div class="login-illustration">
+      <h2>Belanja Makin Mudah &amp; Hemat</h2>
+      <p>Masuk untuk mendapatkan penawaran khusus, gratis ongkir, dan cashback setiap hari.</p>
+      <img src="https://picsum.photos/seed/shopping/280/280" alt="Ilustrasi belanja">
+    </div>
+
+    <!-- ============ PANEL KANAN (form) ============ -->
+    <div class="login-form-panel" data-tab-group>
+
+      <div class="login-tabs">
+        <button class="login-tab active" data-tab-target="masuk">Masuk</button>
+        <button class="login-tab" data-tab-target="daftar">Daftar</button>
+      </div>
+
+      <!-- FORM MASUK -->
+      <form class="login-form" data-tab-panel="masuk" onsubmit="return false;">
+        <div class="form-row-login">
+          <label>Email / Nomor HP</label>
+          <input type="text" placeholder="Masukkan email atau nomor HP" required>
+        </div>
+        <div class="form-row-login">
+          <label>Kata Sandi</label>
+          <input type="password" placeholder="Masukkan kata sandi" required>
+        </div>
+        <a href="#" class="forgot-link">Lupa kata sandi?</a>
+        <button class="btn btn-primary btn-block" type="submit">Masuk</button>
+
+        <div class="divider"><span>atau masuk dengan</span></div>
+
+        <div class="social-buttons">
+          <button type="button" class="btn btn-ghost btn-block">Google</button>
+          <button type="button" class="btn btn-ghost btn-block">Facebook</button>
+        </div>
+      </form>
+
+      <!-- FORM DAFTAR -->
+      <form class="login-form" data-tab-panel="daftar" style="display:none;" onsubmit="return false;">
+        <div class="form-row-login">
+          <label>Nama Lengkap</label>
+          <input type="text" placeholder="Masukkan nama lengkap" required>
+        </div>
+        <div class="form-row-login">
+          <label>Email / Nomor HP</label>
+          <input type="text" placeholder="Masukkan email atau nomor HP" required>
+        </div>
+        <div class="form-row-login">
+          <label>Kata Sandi</label>
+          <input type="password" placeholder="Buat kata sandi" required>
+        </div>
+        <div class="form-row-login">
+          <label>Konfirmasi Kata Sandi</label>
+          <input type="password" placeholder="Ulangi kata sandi" required>
+        </div>
+        <p class="tnc-text">Dengan mendaftar, kamu menyetujui <a href="#">Syarat &amp; Ketentuan</a> dan <a href="#">Kebijakan Privasi</a> kami.</p>
+        <button class="btn btn-primary btn-block" type="submit">Daftar</button>
+      </form>
+
+    </div>
+  </div>
+</main>
+
+<script src="js/main.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+/* =========================================================
+   PRODUK-DETAIL.CSS — hanya dipakai oleh produk-detail.html
+   ========================================================= */
+
+.product-detail {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 32px;
+  padding: 24px;
+}
+
+.pd-main-image {
+  aspect-ratio: 1/1;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: #f0f0f0;
+  border: 1px solid var(--color-border);
+}
+
+.pd-main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pd-thumbs {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.pd-thumbs img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.pd-thumbs img.active,
+.pd-thumbs img:hover {
+  border-color: var(--color-primary);
+}
+
+.pd-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.pd-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--color-text-soft);
+  margin-bottom: 18px;
+}
+
+.pd-rating-score {
+  color: var(--color-primary);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.pd-stars {
+  color: var(--color-star);
+  font-size: 13px;
+}
+
+.pd-divider {
+  color: var(--color-border);
+}
+
+.pd-price-box {
+  background: #fafafa;
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.pd-price {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.pd-price-old {
+  font-size: 14px;
+  color: var(--color-text-soft);
+  text-decoration: line-through;
+}
+
+.pd-discount-tag {
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+
+.pd-promo-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.pd-promo-label {
+  color: var(--color-text-soft);
+}
+
+.pd-voucher {
+  border: 1px dashed var(--color-primary);
+  color: var(--color-primary);
+  padding: 3px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+}
+
+.pd-variant {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.pd-variant-label {
+  width: 90px;
+  flex-shrink: 0;
+  font-size: 13px;
+  color: var(--color-text-soft);
+}
+
+.pd-variant-options {
+  display: flex;
+  gap: 8px;
+}
+
+.variant-btn {
+  padding: 8px 18px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+}
+
+.variant-btn.active {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  background: #fff3ef;
+}
+
+.qty-stepper {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  width: fit-content;
+}
+
+.qty-stepper button {
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  color: var(--color-text-soft);
+}
+
+.qty-stepper input {
+  width: 44px;
+  text-align: center;
+  border: none;
+  border-left: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+  height: 32px;
+  font-size: 13px;
+}
+
+.pd-stock {
+  font-size: 12.5px;
+  color: var(--color-text-soft);
+}
+
+.pd-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.pd-actions .btn {
+  padding: 13px 26px;
+}
+
+/* Tabs panel */
+.pd-panel {
+  padding: 20px;
+}
+
+.pd-panel h3 {
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.pd-spec-list {
+  margin-bottom: 16px;
+}
+
+.pd-spec-list li {
+  display: flex;
+  font-size: 13px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.pd-spec-list li span:first-child {
+  width: 200px;
+  color: var(--color-text-soft);
+  flex-shrink: 0;
+}
+
+.pd-description-text {
+  font-size: 13.5px;
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+.review-item {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.review-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.review-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.review-name {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.review-text {
+  font-size: 13px;
+  color: var(--color-text-soft);
+}
+
+@media (max-width: 900px) {
+  .product-detail {
+    grid-template-columns: 1fr;
+  }
+}

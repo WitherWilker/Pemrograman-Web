@@ -1,0 +1,24 @@
+/* =========================================================
+   FAVORIT.CSS — hanya dipakai oleh favorit.html
+   ========================================================= */
+
+.favorit-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 24px 0 16px;
+}
+
+.page-title {
+  font-family: var(--font-display);
+  font-size: 22px;
+}
+
+.favorit-count {
+  font-size: 13px;
+  color: var(--color-text-soft);
+}
+
+.empty-state {
+  margin-bottom: 20px;
+}
